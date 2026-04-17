@@ -1013,6 +1013,14 @@
     urijs "^1.19.0"
     utility "^1.15.0"
 
+"@eggjs/yauzl@^2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@eggjs/yauzl/-/yauzl-2.11.0.tgz#b8e4413f50fc7c51451f770f152de4c1137aa99b"
+  integrity sha512-Jq+k2fCZJ3i3HShb0nxLUiAgq5pwo8JTT1TrH22JoehZQ0Nm2dvByGIja1NYfNyuE4Tx5/Dns5nVsBN/mlC8yg==
+  dependencies:
+    buffer-crc32 "~0.2.3"
+    fd-slicer2 "^1.2.0"
+
 "@hot-loader/react-dom@^16.8.6":
   version "16.11.0"
   resolved "http://npm.iwhalecloud.com:8081/repository/npm-all/@hot-loader/react-dom/-/react-dom-16.11.0.tgz#c0b483923b289db5431516f56ee2a69448ebf9bd"
@@ -4099,17 +4107,18 @@ compressible@^2.0.6, compressible@~2.0.5:
     mime-db ">= 1.40.0 < 2"
 
 compressing@^1.2.3:
-  version "1.4.0"
-  resolved "http://npm.iwhalecloud.com:8081/repository/npm-all/compressing/-/compressing-1.4.0.tgz#79fdccb87cfd141ac54f585112845f2178f29256"
-  integrity sha512-7Y6aU45Ud0y7sxr8szQ91dJPHIENKmG0zD9bcLSZSGf67Xap/J8pqFGCklnrFavkl5taulZb7YvSa557mb732A==
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.10.5.tgz#7b3775879dbe35fa504827885c546495148b90d4"
+  integrity sha512-kmVGoqpCTZLy36T8XeYexmyJ8YhZhgjGzkPr2iCGHdfZg7IkelF5DEf5Xyzeo7hwSSEW6ifZuv0IeRAkee5NcA==
   dependencies:
+    "@eggjs/yauzl" "^2.11.0"
     flushwritable "^1.0.0"
     get-ready "^1.0.0"
+    iconv-lite "^0.5.0"
     mkdirp "^0.5.1"
     pump "^3.0.0"
     streamifier "^0.1.1"
     tar-stream "^1.5.2"
-    yauzl "^2.7.0"
     yazl "^2.4.2"
 
 compression@~1.5.2:
@@ -6589,6 +6598,13 @@ fbjs@^0.8.15, fbjs@^0.8.16, fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.18"
 
+fd-slicer2@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fd-slicer2/-/fd-slicer2-1.2.0.tgz#a2c54a540639bbcd4702480821771341277ca20e"
+  integrity sha512-3lBUNUckhMZduCc4g+Pw4Ve16LD9vpX9b8qUkkKq2mgDRLYWzblszZH2luADnJqjJe+cypngjCuKRm/IW12rRw==
+  dependencies:
+    pend "^1.2.0"
+
 fd-slicer@~1.1.0:
   version "1.1.0"
   resolved "http://npm.iwhalecloud.com:8081/repository/npm-all/fd-slicer/-/fd-slicer-1.1.0.tgz#25c7c89cb1f9077f8891bbe61d8f390eae256f1e"
@@ -7699,6 +7715,13 @@ iconv-lite@^0.2.11:
   version "0.2.11"
   resolved "http://npm.iwhalecloud.com:8081/repository/npm-all/iconv-lite/-/iconv-lite-0.2.11.tgz#1ce60a3a57864a292d1321ff4609ca4bb965adc8"
   integrity sha1-HOYKOleGSiktEyH/RgnKS7llrcg=
+
+iconv-lite@^0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.5.2.tgz#af6d628dccfb463b7364d97f715e4b74b8c8c2b8"
+  integrity sha512-kERHXvpSaB4aU3eANwidg79K8FlrN77m8G9V+0vOR3HYaRifrlwMEpT7ZBJqLSEIHnEgJTHcWK82wwLwwKwtag==
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
 
 icss-utils@^4.0.0, icss-utils@^4.1.1:
   version "4.1.1"
@@ -10764,10 +10787,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pend@~1.2.0:
+pend@^1.2.0, pend@~1.2.0:
   version "1.2.0"
-  resolved "http://npm.iwhalecloud.com:8081/repository/npm-all/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
-  integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
+  resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
+  integrity sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -14986,7 +15009,7 @@ yargs@^7.0.1:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-yauzl@^2.4.2, yauzl@^2.7.0:
+yauzl@^2.4.2:
   version "2.10.0"
   resolved "http://npm.iwhalecloud.com:8081/repository/npm-all/yauzl/-/yauzl-2.10.0.tgz#c7eb17c93e112cb1086fa6d8e51fb0667b79a5f9"
   integrity sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
